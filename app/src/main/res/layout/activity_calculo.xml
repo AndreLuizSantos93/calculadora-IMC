@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Calculo">
+
+    <LinearLayout
+        android:id="@+id/ll_calculo"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@drawable/botton_rounded"
+        android:orientation="vertical"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="0dp">
+
+    </LinearLayout>
+
+    <TextView
+
+        android:id="@+id/txtSubTitleCalculo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Preencha os campos com seu peso e sua altura para calcular o seu índice de massa corporal"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/txtTitleCalculo"
+        app:layout_constraintTop_toBottomOf="@+id/txtTitleCalculo" />
+
+    <TextView
+        android:id="@+id/txtTitleCalculo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Calculadora IMC"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageCalculo" />
+
+    <EditText
+        android:id="@+id/edt_peso"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/bg_edittext"
+        android:ems="10"
+        android:hint="Digite seu peso ex: 70.200"
+        android:drawableEnd="@drawable/icon_peso"
+        android:drawableTint="#9E9E9E"
+        android:inputType="numberDecimal"
+        android:maxLength="6"
+        android:paddingStart="18dp"
+        android:paddingEnd="18dp"
+        android:textColor="#000000"
+        android:textColorHint="#9E9E9E"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/txtSubTitleCalculo"
+        app:layout_constraintTop_toBottomOf="@+id/ll_calculo" />
+
+    <EditText
+        android:id="@+id/edtAltura"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/bg_edittext"
+        android:drawableEnd="@drawable/icon_altura"
+        android:drawableTint="#9E9E9E"
+        android:ems="10"
+        android:hint="Digite sua altura ex: 1.70"
+        android:inputType="numberDecimal"
+        android:maxLength="4"
+        android:paddingStart="18dp"
+        android:paddingEnd="18dp"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/edt_peso"
+        app:layout_constraintTop_toBottomOf="@+id/edt_peso" />
+
+    <Button
+        android:id="@+id/btn_calcular"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="@color/corBotton"
+        android:textColor="@color/white"
+        android:text="Calcular"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageCalculo"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="34dp"
+        android:src="@drawable/icon_balanca"
+        app:layout_constraintStart_toStartOf="@+id/txtTitleCalculo"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </ImageView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
