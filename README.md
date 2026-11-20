@@ -111,6 +111,4 @@ O print abaixo mostra a implementação da classificação por faixas e da alter
 
 Os prints mostram o resultado acompanhado de `Kg`. A unidade do IMC é **kg/m²**; a legenda deverá ser ajustada no aplicativo. As imagens registram a versão atual.
 
-## Autor
 
-Desenvolvido por **André Santos**, como projeto de estudo em desenvolvimento Android com Kotlin.
